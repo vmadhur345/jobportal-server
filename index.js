@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
     origin:['http://localhost:5173','https://jobportal-client-tnc5.onrender.com','http://localhost:3000/'],
-    credentials:false
+    credentials:true
 }
 
 app.use(cors(corsOptions));
